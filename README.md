@@ -9,7 +9,7 @@ Descrição: [TESTE VAGA PO-UI - Analista I](https://docs.google.com/document/d/
 ## Getting Started
 
 1. Cloning the Repository<br>
-``` ```<br>
+```https://github.com/AnnaBia/technical-test-totvs.git```<br>
 Navigate to the *technical-test-totvs folder*.<br>
 2. Installing Dependencies<br>
 ```npm install```<br>
