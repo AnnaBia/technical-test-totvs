@@ -1,0 +1,28 @@
+#restore {
+	float: inline-end;
+	margin: -8px;
+}
+
+form {
+  po-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+po-row {
+	display: flex;
+	justify-content: center;
+}
+
+po-select {
+  margin-inline: auto;
+}
+
+@media (max-width: 480.98px) {
+  #label, #value {
+    padding-inline: 0;
+  }
+}

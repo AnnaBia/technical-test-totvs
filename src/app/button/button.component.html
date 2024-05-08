@@ -1,0 +1,20 @@
+<po-container>
+  <po-button p-icon="po-icon po-icon-history" (p-click)="restore()" id="restore" p-kind="tertiary" p-tooltip="Restore">
+  </po-button>
+  <div class="po-font-subtitle po-mb-3">Configure My button</div>
+  <po-radio-group p-label="Type" name="typeButton" [p-options]="buttonTypeOptions" [(ngModel)]="typeButton"
+    (p-change)="verifyTertiaryButton($event)">
+  </po-radio-group>
+  <po-checkbox-group p-label="Properties" name="propertiesButton" [p-options]="buttonPropertiesOptions"
+    [ngModel]="propertiesButton" (ngModelChange)="changeButtonProperties($event)">
+  </po-checkbox-group>
+  <po-radio-group p-label="Size" name="sizeButton" [p-options]="buttonSizeOptions" [(ngModel)]="sizeButton"
+    (p-change)="verifyTertiaryButton($event)">
+  </po-radio-group>
+  <po-divider></po-divider>
+  <po-widget p-title="Preview">
+    <po-button p-label="My button" (p-click)="alertButtonClick()" [p-kind]="typeButton" [p-size]="sizeButton"
+      [p-disabled]="propertiesButton.includes('disabled')" [p-danger]="propertiesButton.includes('danger')">
+    </po-button>
+  </po-widget>
+</po-container>

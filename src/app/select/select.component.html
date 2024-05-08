@@ -1,0 +1,27 @@
+<po-container>
+  <po-button p-icon="po-icon po-icon-history" (p-click)="restore()" id="restore" p-kind="tertiary" p-tooltip="Restore">
+  </po-button>
+  <div class="po-font-subtitle po-mb-3">Configure My select</div>
+  <div p-label="Select Configuration" class="po-font-text-large po-mb-3"></div>
+  <div class="po-font-text">Set values:</div>
+  <form [formGroup]="formAddOption" class="po-mb-3">
+    <div class="po-row">
+      <po-input name="label" p-label="Label" formControlName="label" class="po-md-6 po-pl-0" id="label">
+      </po-input>
+      <po-input name="value" p-label="Value" formControlName="value" class="po-md-6 po-pr-0" id="value">
+      </po-input>
+    </div>
+    <po-button p-label="Add option" (p-click)="addOption()" p-icon="po-icon po-icon-plus"
+      [p-disabled]="formAddOption.invalid"></po-button>
+  </form>
+  <po-switch name="selectOptionGroupSwitch" [(ngModel)]="disabledSelect" p-label="Disabled">
+  </po-switch>
+  <po-divider></po-divider>
+  <po-widget p-title="Preview">
+    <div class="po-row background-my-select">
+      <po-select name="select" p-label="My select" [p-options]="selectOptions" class="po-md-6"
+        [p-disabled]="disabledSelect" [formControl]="selecteValue">
+      </po-select>
+    </div>
+  </po-widget>
+</po-container>
