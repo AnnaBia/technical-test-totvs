@@ -4,7 +4,6 @@ Descrição: [TESTE VAGA PO-UI - Analista I](https://docs.google.com/document/d/
 ## Test Application Overview
 - Node.js Version: 18.13.0
 - [CLI Version: 17.2.3](https://www.npmjs.com/package/@angular/cli/v/17.2.3)
-- [Po UI Version: 17.8.0](https://po-ui.io/guides/getting-started)
 
 ## Getting Started
 
