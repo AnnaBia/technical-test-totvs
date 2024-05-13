@@ -1,10 +1,51 @@
 <div class="container">
-  <po-tabs class="po-lg-6 po-md-10">
-    <po-tab [p-active]="true" p-label="Button">
-      <app-button class="po-mb-3"></app-button>
-    </po-tab>
-    <po-tab p-label="Select">
-      <app-select class="po-mb-3"></app-select>
-    </po-tab>
-  </po-tabs>
+  <div class="section border">
+    <h2>BUTTON</h2>
+    <div class="preview">
+      <div class="card border">
+        <p>Type: </p>
+        <div class="preview">
+          <app-button [variant]="'primary'">Primary</app-button>
+          <app-button [variant]="'secondary'">Secondary</app-button>
+          <app-button [variant]="'tertiary'">Tertiary</app-button>
+        </div>
+      </div>
+      <div class="card border">
+        <p>Danger: </p>
+        <div class="preview">
+          <app-button [variant]="'primary'" [danger]="true">Primary</app-button>
+          <app-button [variant]="'secondary'" [danger]="true">Secondary</app-button>
+        </div>
+      </div>
+      <div class="card border">
+        <p>Disabled: </p>
+        <div class="preview">
+          <app-button [variant]="'primary'" [disabled]="true">Primary</app-button>
+          <app-button [variant]="'secondary'" [disabled]="true">Secondary</app-button>
+          <app-button [variant]="'tertiary'" [disabled]="true">Tertiary</app-button>
+        </div>
+      </div>
+      <div class="card border">
+        <p>Size: </p>
+        <div class="preview">
+          <app-button>Normal</app-button>
+          <app-button [size]="'lg'">Large</app-button>
+        </div>
+      </div>
+      <div class="card border">
+        <p>Event: </p>
+        <div class="preview">
+          <app-button (onClick)="handleButtonClick()">Click me</app-button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" border">
+    <h2>SELECT</h2>
+    <div class="card preview">
+      <app-select [formControl]="selectControl" [options]="selectOptions"></app-select>
+      <app-select [options]="selectOptions" [disabled]="true"></app-select>
+      <p>Selected value: {{ selectControl.value }}</p>
+    </div>
+  </div>
 </div>

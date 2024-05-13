@@ -1,26 +1,6 @@
 // /* You can add global styles to this file, and also import other style files */
-po-button {
-	--text-color: #FFFFFF;
-	--color: #4545A1;
-	--color-hover: #1F1F7A;
-	--border-color-hover: #1F1F7A;
-	--color-pressed: #0D0D59;
-	--color-disabled: #B4B4C0;
-	--text-color-disabled: #515162;
-	--color-button-danger: #9B2D27;
-	--color-danger-hover: #72211D;
-	--border-color-danger-hover: #72211D;
-}
-
-po-tabs {
-	--background: transparent;
-	--background-item-selected: transparent;
-}
-
-po-widget {
-	--background: #FAFAFA;
-}
-
 body {
 	background-color: #FAFAFA;
+	font-size: 1rem;
+	font-family: sans-serif;
 }

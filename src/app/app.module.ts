@@ -1,27 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PoModule } from '@po-ui/ng-components';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { PoFieldModule } from '@po-ui/ng-components';
 
 import { AppComponent } from './app.component';
-import { ButtonComponent } from './button/button.component';
-import { SelectComponent } from './select/select.component';
+import { ButtonComponent } from './components/button/button.component';
+import { SelectComponent } from './components/select/select.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ButtonComponent,
-    SelectComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    PoModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    PoFieldModule
+    ButtonComponent,
+    SelectComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

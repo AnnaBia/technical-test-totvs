@@ -1,0 +1,56 @@
+:host {
+	--color: #515162;
+	--background: #F9F9FA;
+	--text-color: #1D1D30;
+	--padding-horizontal: 8px;
+	--padding-vertical: 11px;
+
+	--color-hover: #1F1F7A;
+	--background-hover: #EBEBF5;
+
+	--color-focused: #4545A1;
+	--outline-color-focused: #030330;
+
+	--color-disabled: #B4B4C0;
+	--background-disabled: #D0D0D7;
+}
+
+select {
+	font-family: sans-serif;
+	color: var(--text-color);
+	border-color: var(--color);
+	background-color: var(--background);
+	padding: var(--padding-vertical) var(--padding-horizontal);
+	border-radius: 4px;
+	border-style: solid;
+	min-height: 44px;
+	cursor: pointer;
+	outline-width: thick;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+select option:checked {
+	color: var(--text-color);
+}
+
+select:hover {
+	border-color: var(--color-hover);
+	background-color: var(--background-hover);
+	color: var(--color-hover);
+}
+
+select:focus {
+	background-color: var(--background);
+	border-color: var(--color-focused);
+	outline-color: var(--outline-color-focused);
+	outline-style: solid;
+	outline-offset: 2px;
+}
+
+select:disabled {
+	border-color: var(--color-disabled);
+	background-color: var(--background-disabled);
+	color: var(--text-color);
+	cursor: not-allowed;
+}

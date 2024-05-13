@@ -1,0 +1,197 @@
+:host {
+	--text-color: #FFFFFF;
+	--color: #4545A1;
+	--color-hover: #1F1F7A;
+	--border-color-hover: #1F1F7A;
+	--color-pressed: #0D0D59;
+	--color-disabled: #B4B4C0;
+	--text-color-disabled: #515162;
+	--background-hover: #C2C2E5;
+	--background-pressed: #9898CD;
+	--outline-color-focused: #030330;
+	--color-danger: #9B2D27;
+	--color-danger-hover: #72211D;
+	--color-danger-pressed: #4A1512;
+	--border-color-danger-hover: #72211D;
+	--background-danger-hover: #E3AEAB;
+	--background-danger-pressed: #D58581;
+}
+
+button {
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: 24px;
+	border-radius: 4px;
+	border-width: 2px;
+	letter-spacing: normal;
+	border-style: solid;
+	padding-inline: 16px;
+}
+
+button.primary {
+	color: var(--text-color);
+	background-color: var(--color);
+	box-shadow: none;
+	border-color: transparent;
+}
+
+button.primary:hover {
+	background-color: var(--color-hover);
+	cursor: pointer;
+}
+
+button.primary:active {
+	background-color: var(--color-pressed);
+	outline-color: var(--outline-color-focused);
+	outline-width: thick;
+	outline-style: solid;
+	outline-offset: 2px;
+	cursor: pointer;
+}
+
+button.primary:disabled {
+	color: var(--text-color-disabled);
+	background-color: var(--color-disabled);
+	cursor: not-allowed;
+	outline: none;
+}
+
+button.secondary {
+	color: var(--color);
+	border-color: var(--color);
+	border-style: solid;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+button.secondary:hover {
+	background-color: var(--background-hover);
+	border-color: var(--border-color-hover);
+	cursor: pointer;
+	color: var(--border-color-hover);
+}
+
+button.secondary:active {
+	background-color: var(--background-pressed);
+	border-color: var(--border-color-hover);
+	color: var(--border-color-hover);
+	outline-color: var(--outline-color-focused);
+	outline-style: solid;
+	outline-width: thick;
+	outline-offset: 2px;
+	cursor: pointer;
+}
+
+button.secondary:disabled {
+	color: var(--color-disabled);
+	border-color: var(--color-disabled);
+	background-color: transparent;
+	cursor: not-allowed;
+	outline: none;
+}
+
+button.tertiary {
+	color: var(--color);
+	border-color: transparent;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+button.tertiary:hover {
+	background-color: var(--background-hover);
+	color: var(--border-color-hover);
+	cursor: pointer;
+}
+
+button.tertiary:active {
+	color: var(--color-pressed);
+	background-color: var(--background-pressed);
+	outline-color: var(--outline-color-focused);
+	outline-width: thick;
+	outline-style: solid;
+	outline-offset: 2px;
+	cursor: pointer;
+}
+
+button.tertiary:disabled {
+	color: var(--color-disabled);
+	background-color: transparent;
+	cursor: not-allowed;
+	outline: none;
+}
+
+button.primary.danger {
+	color: var(--text-color);
+	background-color: var(--color-danger);
+	border-color: transparent;
+}
+
+button.primary.danger:hover {
+	background-color: var(--color-danger-hover);
+	cursor: pointer;
+}
+
+button.primary.danger:active {
+	background-color: var(--color-danger-pressed);
+	outline-color: var(--outline-color-focused);
+	outline-width: thick;
+	outline-style: solid;
+	outline-offset: 2px;
+	cursor: pointer;
+}
+
+button.primary.danger:disabled {
+	color: var(--text-color-disabled);
+	background-color: var(--color-disabled);
+	cursor: not-allowed;
+	outline: none;
+}
+
+button.secondary.danger {
+	color: var(--color-danger);
+	border-color: var(--color-danger);
+	border-style: solid;
+	box-shadow: none;
+}
+
+button.secondary.danger:hover {
+	background-color: var(--background-danger-hover);
+	border-color: var(--border-color-danger-hover);
+	color: var(--border-color-danger-hover);
+	cursor: pointer;
+}
+
+button.secondary.danger:active {
+	background-color: var(--background-danger-pressed);
+	border-color: var(--border-color-danger-hover);
+	color: var(--border-color-danger-hover);
+	outline-color: var(--outline-color-focused);
+	outline-width: thick;
+	outline-style: solid;
+	outline-offset: 2px;
+	cursor: pointer;
+}
+
+button.secondary.danger:disabled {
+	color: var(--color-disabled);
+	border-color: var(--color-disabled);
+	background-color: transparent;
+	cursor: not-allowed;
+	outline: none;
+}
+
+button:focus {
+	outline-color: var(--outline-color-focused);
+	outline-width: thick;
+	outline-style: solid;
+	outline-offset: 2px;
+}
+
+button.md {
+	min-height: 44px;
+}
+
+button.lg {
+	min-height: 56px;
+}
