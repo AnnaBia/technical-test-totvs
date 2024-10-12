@@ -15,3 +15,5 @@ Navigate to the *technical-test-totvs folder*.<br>
 3. Running the Application<br>
 ```ng serve --open```<br>
 This will open the application in your default web browser at http://localhost:4200.
+
+> [Run on StackBlitz](https://stackblitz.com/github/AnnaBia/technical-test-totvs)
