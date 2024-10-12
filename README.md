@@ -1,5 +1,5 @@
 # Technical Test Totvs
-Descrição: [TESTE VAGA PO-UI - Analista I](https://docs.google.com/document/d/1i1LAM3JCESGzoHdaDxu-bWKbLBFSHX-k/edit?usp=sharing&ouid=106014797912129397303&rtpof=true&sd=true)
+Description: [TESTE VAGA PO-UI - Analista I](https://docs.google.com/document/d/1i1LAM3JCESGzoHdaDxu-bWKbLBFSHX-k/edit?usp=sharing&ouid=106014797912129397303&rtpof=true&sd=true)
 
 ## Test Application Overview
 - Node.js Version: 18.13.0
